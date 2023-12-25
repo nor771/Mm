@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            node.js
+        </title>
+    </head>
+    <body>
+        <h1>
+ارسال طلب الى الخادم
+        </h1>
+        <button onclick="sendRequest()">send
+        </button>
+        <script>
+      function sendRequest(){
+      fetch('/api')
+      .then(Response=>Response.text())
+      .then(data=> alert(data));
+      }
+        </script>
+    </body>
+</html>
